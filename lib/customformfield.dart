@@ -47,7 +47,7 @@ class CustomFormField extends StatelessWidget {
     this.decorationColor = const Color.fromRGBO(37, 37, 38, 1),
     this.fontColor = Colors.white,
     this.fontsize = 16,
-    this.radius = 30,
+    this.radius = 20,
     this.widgetprefix,
     this.lblcolor = const Color.fromRGBO(120, 119, 122, 1),
     this.prefixtext = '',
