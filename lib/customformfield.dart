@@ -7,37 +7,38 @@ class CustomFormField extends StatelessWidget {
   final String? labelText;
   final bool autoFocus;
   final bool enabled;
-  final FocusNode fcs;
+  final FocusNode? fcs;
   final TextEditingController ctrl;
-  final String? hinttxt;
-  final String prefixtext;
+  final String? hintTxt;
+  final String? prefixText;
   final bool obscuretxt;
-  final Icon? icondecoration;
+  final Icon? iconDecoration;
   final int? maxLength;
-  final Widget? widgetprefix;
+  final Widget? widgetPrefix;
   final TextInputAction? txtInputAction;
   final TextInputType? keyboardType;
   final Color decorationColor;
   final Color decorationBorderColor;
   final Color fontColor;
-  final Color lblcolor;
+  final Color lblColor;
   final List<TextInputFormatter>? inputFormatters;
+  final double letterSpacing;
 
-  final double fontsize;
+  final double fontSize;
   final double radius;
   final void Function(String)? fieldSubmitted;
   final void Function(String)? onChage;
   final String? Function(String?)? validator;
   final bool hasBorder;
 
-  final TextStyle textStyle;
+  final TextStyle? textStyle;
 
   const CustomFormField({
     Key? key,
     required this.fcs,
     required this.ctrl,
-    required this.hinttxt,
-    this.icondecoration,
+    this.hintTxt,
+    this.iconDecoration,
     this.fieldSubmitted,
     this.validator,
     this.obscuretxt = false,
@@ -46,11 +47,10 @@ class CustomFormField extends StatelessWidget {
     this.keyboardType,
     this.decorationColor = const Color.fromRGBO(37, 37, 38, 1),
     this.fontColor = Colors.white,
-    this.fontsize = 16,
+    this.fontSize = 16,
     this.radius = 20,
-    this.widgetprefix,
-    this.lblcolor = const Color.fromRGBO(120, 119, 122, 1),
-    this.prefixtext = '',
+    this.widgetPrefix,
+    this.prefixText = '',
     this.inputFormatters,
     this.autoFocus = false,
     this.maxLength,
@@ -58,7 +58,9 @@ class CustomFormField extends StatelessWidget {
     this.onChage,
     this.hasBorder = true,
     this.labelText,
-    required this.textStyle,
+    this.textStyle,
+    this.lblColor = Colors.black,
+    this.letterSpacing = 1.3,
   }) : super(key: key);
 
   @override
@@ -91,11 +93,11 @@ class CustomFormField extends StatelessWidget {
           obscureText: obscuretxt,
           inputFormatters: inputFormatters,
           decoration: InputDecoration(
-            icon: icondecoration,
+            icon: iconDecoration,
             border: InputBorder.none,
-            hintText: hinttxt,
+            hintText: hintTxt,
             hintStyle: textStyle,
-            prefixText: prefixtext,
+            prefixText: prefixText,
             labelText: labelText,
             prefixStyle: textStyle,
             labelStyle: textStyle,
@@ -106,8 +108,8 @@ class CustomFormField extends StatelessWidget {
               : AutovalidateMode.always,
           style: TextStyle(
             color: fontColor,
-            fontSize: fontsize,
-            letterSpacing: 1.3,
+            fontSize: fontSize,
+            letterSpacing: letterSpacing,
           ),
           onFieldSubmitted: fieldSubmitted,
           onChanged: onChage,
