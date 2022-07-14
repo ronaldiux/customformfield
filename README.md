@@ -10,6 +10,7 @@ For general information about developing packages, see the Dart guide for
 and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
+## CustomFormField
 
 Package in order to establish a standard for the formfield and make some visual adjustments ready.
 
@@ -22,19 +23,7 @@ TODO: List what your package can do. Maybe include images, gifs, or videos.
 
 ## Getting started
 
-Uso Simples
-                    CustomFormField(
-                      radius: 15,
-                      hinttxt: 'Detalhes',
-                      ctrl: textController,
-                      fcs: focusNode,
-                      decorationColor: Colors.white,
-                      txtInputAction: TextInputAction.next,
-                      decorationBorderColor: Colors.Blue,
-                      hasBorder: true,
-                      fontColor: Colors.black,
-                      textStyle : TextStyle(),
-                    )
+Simple usage, just a helper class.
 
 ## Usage
 

@@ -1,7 +1,9 @@
 name: customformfield
 description: Custom FormField.
 version: 0.0.1
-homepage:
+homepage: https://github.com/ronaldiux/
+repository: https://github.com/ronaldiux/customformfield
+
 
 environment:
   sdk: ">=2.17.3 <3.0.0"
@@ -21,20 +23,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-  plugin:
-    platforms:
-      android:
-        package: com.example.hello
-        pluginClass: CustomFormField
-      ios:
-        pluginClass: CustomFormField
-      macos:
-        pluginClass: CustomFormField
-      web:
-        pluginClass: CustomFormField
-        fileName: customformfield.dart
-      windows:
-        pluginClass: HelloPlugin
   # To add assets to your package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
