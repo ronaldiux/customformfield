@@ -1,4 +1,4 @@
-import 'package:customformfield_an/customformfield.dart';
+import 'package:customformfield_an/customformfield_an.dart';
 import 'package:flutter/material.dart';
 
 class ExampleCustomFormField extends StatelessWidget {
