@@ -22,8 +22,8 @@ Pacote com fim de estabelecer um padrao do formfield e deixar pronto alguns ajus
 Some Images:
 
 <br>
-<img height="100" width="100" src="https://raw.githubusercontent.com/ronaldiux/customformfield/main/screenshots/01.png" alt="CustomFormField" style="max-width: 100%;">
-<img height="100" width="100" src="https://raw.githubusercontent.com/ronaldiux/customformfield/main/screenshots/02.png" alt="CustomFormField" style="max-width: 100%;">
+<img height="100" width="400" src="https://raw.githubusercontent.com/ronaldiux/customformfield/main/screenshots/01.png" alt="CustomFormField" style="max-width: 100%;">
+<img height="100" width="400" src="https://raw.githubusercontent.com/ronaldiux/customformfield/main/screenshots/02.png" alt="CustomFormField" style="max-width: 100%;">
 
 ## Getting started
 
