@@ -10,7 +10,7 @@ For general information about developing packages, see the Dart guide for
 and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
-## CustomFormField
+## CustomFormField_an
 
 Package in order to establish a standard for the formfield and make some visual adjustments ready.
 
@@ -27,7 +27,7 @@ Some Images:
 
 ## Getting started
 
-Simple usage, just a helper class.
+Simple usage, just a class.
 
 ## Usage
 
